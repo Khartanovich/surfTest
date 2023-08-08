@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/myCocktailsFragment">
+
+    <fragment
+        android:id="@+id/myCocktailsFragment"
+        android:name="com.example.cocktailbarsurf.presentation.MyCocktailsFragment"
+        android:label="fragment_my_coctails"
+        tools:layout="@layout/fragment_my_coctails" >
+        <action
+            android:id="@+id/action_myCocktailsFragment_to_informationCocktailFragment"
+            app:destination="@id/informationCocktailFragment"
+            app:popUpTo="@id/myCocktailsFragment"
+            app:popUpToInclusive="false"/>
+        <action
+            android:id="@+id/action_myCocktailsFragment_to_createNewCocktailFragment"
+            app:destination="@id/createNewCocktailFragment"
+            app:popUpTo="@id/myCocktailsFragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+    <fragment
+        android:id="@+id/createNewCocktailFragment"
+        android:name="com.example.cocktailbarsurf.presentation.CreateNewCocktailFragment"
+        android:label="fragment_create_new_cocktail"
+        tools:layout="@layout/fragment_create_new_cocktail" />
+    <fragment
+        android:id="@+id/informationCocktailFragment"
+        android:name="com.example.cocktailbarsurf.presentation.InformationCocktailFragment"
+        android:label="fragment_information_cocktail"
+        tools:layout="@layout/fragment_information_cocktail" >
+        <action
+            android:id="@+id/action_informationCocktailFragment_to_createNewCocktailFragment"
+            app:destination="@id/createNewCocktailFragment"
+            app:popUpTo="@id/informationCocktailFragment"
+            app:popUpToInclusive="false"/>
+    </fragment>
+</navigation>

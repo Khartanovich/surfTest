@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="160dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="54dp"
+    android:layout_margin="8dp">
+
+    <ImageView
+        android:id="@+id/imageCocktail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/image_placeholder_cocktail"
+        android:adjustViewBounds="true"/>
+
+    <TextView
+        android:id="@+id/nameCocktail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name cocktail"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="34dp"
+        android:textColor="@color/white"/>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="56dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="32dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add ingredient"
+            android:textSize="32sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center"/>
+        <FrameLayout
+            android:id="@+id/frameContainerIngredient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            >
+
+            <EditText
+                android:id="@+id/addNameIngredient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_rectangle_and_radius"
+                android:hint="Ingredient name"
+                android:textColorHint="#A1887F"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:background="@color/white"
+                android:padding="4dp"
+                android:text="Ingredient"
+                android:textSize="12sp" />
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/buttonAddIngredient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Add"
+            android:background="@drawable/shape_rectangle_and_radius"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonCanselIngredient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Cansel"
+            android:background="@drawable/shape_rectangle_and_radius"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
