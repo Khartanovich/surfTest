@@ -4,9 +4,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.asStateFlow
-import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 
 class InformationCocktailViewModel(private val cocktailDao: CocktailDao) : ViewModel() {
@@ -20,10 +18,8 @@ class InformationCocktailViewModel(private val cocktailDao: CocktailDao) : ViewM
             }.fold(
                 onSuccess = {_information.value = it},
                 onFailure = {
-
                 }
             )
-
         }
     }
 

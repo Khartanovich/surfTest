@@ -10,7 +10,6 @@ import androidx.core.view.children
 import androidx.fragment.app.FragmentResultListener
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModel
-import com.example.cocktailbarsurf.R
 import com.example.cocktailbarsurf.databinding.FragmentCreateNewCocktailBinding
 import com.example.cocktailbarsurf.databinding.IngredientChipBinding
 import com.google.android.material.chip.Chip

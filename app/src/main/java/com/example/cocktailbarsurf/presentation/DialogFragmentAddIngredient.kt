@@ -2,7 +2,6 @@ package com.example.cocktailbarsurf.presentation
 
 import android.app.AlertDialog
 import android.app.Dialog
-import android.content.DialogInterface
 import android.os.Bundle
 import android.widget.Toast
 import androidx.core.os.bundleOf
